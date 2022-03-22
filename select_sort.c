@@ -1,22 +1,3 @@
-#include <stdio.h>
-
-#define LEN_VECTOR(vector) (sizeof(vector)/sizeof((vector)[0]))
-
-int* select_sort(int vector[], int len_vector);
-
-int main() {
-    //Disordered vector
-   int vector_disordered[6] = {8, 3, 1, 42, 12, 5};
-   //Applying ordering
-   int len_vector = LEN_VECTOR(vector_disordered);
-   int *vetor_orderly = select_sort(vector_disordered, len_vector);
-   //Printing the ordered vector
-   for(int i = 0; i < len_vector; i++){
-	   printf("%d\n", vetor_orderly[i]);
-   }
-
-}
-
 int* select_sort(int vector[], int len_vector){
   int smallest_element_position = 0;
   int swap_element = 0;
