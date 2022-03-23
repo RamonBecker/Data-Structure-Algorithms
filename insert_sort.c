@@ -1,8 +1,7 @@
 int* insert_sort(int vector[], int len_vector){
     int swap_element = 0;
     // Loop in vector
-    for (int i = 1; i < len_vector; i++)
-    {
+    for (int i = 1; i < len_vector; i++){
         int next_element_position = i;
 
         // Loop responsible for exchanges
